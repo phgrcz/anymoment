@@ -1,0 +1,43 @@
+<div class="quick_login">
+  {{#if options.users}}
+    <a class='sec_btn clear_all_ql' href='#'>Limpar</a>
+  {{/if}}
+
+  {{#each options.users}}
+    <div
+      class='q_l_div'
+      data-username={{this.username}}
+      data-id={{this.id}}
+    >
+      <img src='/users/{{this.id}}/avatar.jpg' />
+    </div>
+  {{/each}}
+
+</div>
+
+<div class="q_l_model">
+  <div class="q_l_m_cancel_div">
+    <span class="q_l_m_cancel"><i class="material-icons">clear</i></span>
+  </div>
+
+  <div class="q_l_m_main">
+    <div class="q_l_m_img_div">
+      <img class='q_l_m_img' src="/images/anymoment.png" />
+      <span class="q_l_username">@usuario</span>
+    </div>
+
+    <form class="q_l_m_form" method="post">
+      <input type="password" value="" autocomplete="off" placeholder="senha" id="q_l_password" spellcheck="false" required maxlength="32" >
+      <input type="submit" value="Entrar" class="q_l_submit" >
+      <span class="show_psswrd s_p_ql">
+        <i class="fas fa-lock"></i>
+      </span>
+      <div class="q_l_m_bottom">
+        <a href="/forgot-password" class="a_pri" alt="Esqueci minha senha">Esqueci minha senha</a>
+      </div>
+    </form>
+
+    <a href="#" class="sec_btn q_l_remove">Remover</a>
+  </div>
+
+</div>

@@ -1,0 +1,40 @@
+{{> nHeader }}
+
+<div class="notes_wrapper">
+
+  <div class="log_sign">
+    <a href="/login" class="pri_btn">Já tem uma conta?</a>
+  </div>
+
+  <div class="register cua ">
+    <div class="display_text">
+      <span>Vamos começar a compartilhar momentos!</span>
+    </div>
+    <form class="form_register">
+      <input type="text" name="username" value="" class="s_username filter_illegal" autofocus spellcheck="false" autocomplete='false' placeholder='@usuario' required>
+      <div class="username_checker">
+        <span class="checker_text"></span>
+        <span class="checker_icon">
+          <i class="far fa-frown"></i>
+        </span>
+      </div>
+      <input type="text" name="first_name" value="" autocomplete="off" placeholder="Nome" class="s_firstname small_input filter_illegal" spellcheck="false" maxlength="20" required>
+      <input type="text" name="surname" value="" autocomplete="off" placeholder="Sobrenome" class="s_surname small_input filter_illegal" spellcheck="false" maxlength="20" required>
+      <input type="email" name="email" value="" class="s_email" spellcheck="false" autocomplete='false' placeholder='e-mail' required>
+      <input type="password" name="password" value="" id='s_password' class="s_password" placeholder='senha' required>
+      <span class="show_psswrd s_p_s">
+        <i class="fas fa-lock"></i>
+      </span>
+      <div class="terms_div">
+        <input type="checkbox" id="s_terms" name="s_terms" class="s_terms" required>
+        <label for="s_terms" class="terms">Eu aceito os
+          <a href="#" class="a_pri">termos de uso</a>
+        </label>
+      </div>
+      <input type="submit" name="" value="Cadastre-se" class="s_submit">
+    </form>
+  </div>
+
+</div>
+
+{{> footer }}
